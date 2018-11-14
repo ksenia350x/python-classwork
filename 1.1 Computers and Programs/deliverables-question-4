@@ -1,0 +1,38 @@
+4. Modify the chaos program so that it prints out 20 values instead of 10.
+
+--------
+Code
+
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    for i in range(20) :
+        x = 2.0 * x * (1 - x)
+        print(x)
+main()
+
+--------
+Results
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .2
+0.32000000000000006
+0.43520000000000003
+0.49160192
+0.4998589445046272
+0.49999996020669446
+0.49999999999999684
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994

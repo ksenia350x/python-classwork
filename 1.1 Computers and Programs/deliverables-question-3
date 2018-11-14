@@ -1,0 +1,114 @@
+3. Modify the chaos program using 2.0 in place of 3.9 as the multiplier in the logistic function. Your modified line of code should look like this:
+
+x = 2.0 * x * (1 - x)
+
+Run the program for various input values and compare the results to those obtained from the original program. Write a short paragraph describing any differences that you notice in the behavior of the two versions.
+
+--------
+
+Code #1
+
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    for i in range(10) :
+        x = 2.0 * x * (1 - x)
+        print(x)
+main()
+
+Results #1
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .05
+0.095
+0.17195000000000002
+0.284766395
+0.407348990557408
+0.4828315808985375
+0.4994104907711131
+0.4999993049577381
+0.4999999999990339
+0.5
+0.5
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .5
+0.5
+0.5
+0.5
+0.5
+0.5
+0.5
+0.5
+0.5
+0.5
+0.5
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .3
+0.42
+0.4872
+0.49967231999999995
+0.4999997852516352
+0.4999999999999078
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+0.49999999999999994
+
+--------
+Code #2
+
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    for i in range(10) :
+        x = 3.9 * x * (1 - x)
+        print(x)
+main()
+
+Results #2
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .05
+0.18525
+0.58863650625
+0.9443599220631954
+0.2049226126895645
+0.6354244084423842
+0.9034748954323181
+0.340111234147932
+0.87529877196178
+0.42568824387952153
+0.953463275318933
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .5
+0.975
+0.09506250000000008
+0.33549992226562525
+0.8694649252590003
+0.44263310911310905
+0.962165255336889
+0.1419727793616139
+0.4750843861996143
+0.9725789275369049
+0.1040097132674683
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .3
+0.819
+0.5781321000000001
+0.951191962303401
+0.18106067129594494
+0.5782830479626462
+0.9510998811665442
+0.18138469912496583
+0.5790887311884146
+0.950605393136126
+0.1831236407388855
+
+--------
+Comparison Paragraph
+
+The results of the edited chaos equation seem to reach a point where the answer stays the same at a value such as 0.5 or 0.49999999999999994. The edited equation's outcome is very unlike the outcome of the standard chaos equation, which doesn't reach an ultimate answer and keeps on changing the values.
+

@@ -1,0 +1,40 @@
+2. Enter and run the chaos program. Try it out with various values of input to see that it functions as described by the instructor.
+
+--------
+
+Code
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    for i in range(10) :
+        x = 3.9 * x * (1 - x)
+        print(x)
+main()
+
+
+Results
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .0001
+0.000389961
+0.001520254828632068
+0.005919980250163547
+0.02295124292760476
+0.08745548516516305
+0.31124739079078706
+0.8360525648151851
+0.5345678273564297
+0.9703397547162386
+0.11224400902052731
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .00001
+3.899961e-05
+0.0001520925472186374
+0.0005930707187953
+0.00231160404507945
+0.008994416074091065
+0.034762714558951066
+0.13086164611823145
+0.443573815204487
+0.9625827341107481
+0.1404671350002371

@@ -1,0 +1,35 @@
+5. Modify the chaos program so that the number of values to print is determined by the user. You will have to add a line near the top of the program to get another value from the user:
+
+n = eval(input(“How many numbers should I print? ”))
+
+Then you will need to change the loop to use n instead of a specific number.
+
+-------
+Code
+
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    n = eval(input("How many numbers should I print? "))
+    for i in range(n) :
+        x = 3.9 * x * (1 - x)
+        print(x)
+main()
+
+-------
+Results
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .2
+How many numbers should I print? 1
+0.6240000000000001
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .2
+How many numbers should I print? 5
+0.6240000000000001
+0.9150335999999998
+0.30321373239705673
+0.8239731430433209
+0.5656614700878645
+
