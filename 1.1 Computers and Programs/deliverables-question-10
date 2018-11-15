@@ -1,0 +1,12 @@
+10. Write a program that prints the even integers from 2 to 20.
+
+----------
+CODE
+
+def main():
+    x = 0
+    for i in range(10):
+        x = x + 2
+        print(x)
+
+main()

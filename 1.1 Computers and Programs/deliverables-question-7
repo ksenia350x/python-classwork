@@ -1,0 +1,11 @@
+7. Write a program that uses a for loop to print the sentence “Hello, Python!” ten times.
+
+--------
+Code
+
+def main():
+    x = ("Hello, Python!")
+    for i in range(10):
+        print(x)
+
+main()

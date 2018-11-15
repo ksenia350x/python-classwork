@@ -1,0 +1,12 @@
+8. Write a program that prints the integers from 0 to 9.
+
+-----------
+Code
+
+def main():
+    x = -1
+    for i in range(10):
+        x = x + 1
+        print(x)
+
+main()

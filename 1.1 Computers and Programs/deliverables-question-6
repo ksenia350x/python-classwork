@@ -7,6 +7,85 @@ c) 3.9 * x - 3.9 * x * x
 Explain the results of this experiment.
 
 --------
-Code
+Code #1 (a)
 
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    for i in range(10) :
+        x = 3.9 * x * (1 - x)
+        print(x)
+main()
+
+Results (a)
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .0002
+0.000779844
+0.0030390197890090894
+0.011816158176151292
+0.04553849267021911
+0.1695124795866197
+0.5490341955189606
+0.9656230259122525
+0.12946127118723968
+0.43953409675431226
+0.9607411107242643
+
+--------
+Code #2 (b)
+
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    for i in range(10) :
+        x = 3.9 * (x - x * x)
+        print(x)
+main()
+
+Results (b)
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .0002
+0.000779844
+0.0030390197890090894
+0.011816158176151292
+0.04553849267021911
+0.16951247958661966
+0.5490341955189605
+0.9656230259122526
+0.12946127118723927
+0.4395340967543111
+0.9607411107242636
+
+--------
+Code #3 (c)
+
+def main():
+    print("This program illustrates a chaotic function")
+    x = eval(input("Enter a number between 0 and 1: "))
+    for i in range(10) :
+        x = 3.9 * x - 3.9 * x * x
+        print(x)
+main()
+
+Results (c)
+
+This program illustrates a chaotic function
+Enter a number between 0 and 1: .0002
+0.000779844
+0.0030390197890090894
+0.011816158176151292
+0.04553849267021911
+0.1695124795866197
+0.5490341955189606
+0.9656230259122525
+0.12946127118723982
+0.4395340967543127
+0.9607411107242644
+
+---------
+Results Explained
+
+When the algorithms were altered to a different algorithm with the same outcome as the others, none of the results changed. The results stayed the same throughout tests a, b, and c because the algorithm oucome was the same when running the same input through.
 

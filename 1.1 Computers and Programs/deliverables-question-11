@@ -1,0 +1,12 @@
+11. Write a program that prints the squares of the integers from 1 to 10.
+
+---------
+CODE
+
+def main():
+    x = 0
+    for i in range(10):
+        x = x + 1
+        print(x ** 2)
+
+main()
