@@ -1,4 +1,4 @@
-# python-deliverables
+# python-classwork
 Essentials in Python
+Programming and Web Development
 
-Programming and Web Development Deliverables
