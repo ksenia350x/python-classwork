@@ -1,4 +1,4 @@
 # python-classwork
-     Essentials in Python
+Essentials in Python
 
 Programming and Web Development
