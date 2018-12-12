@@ -1,0 +1,17 @@
+3. Write a program that displays the batting average for a baseball player. The batting average is calculated as the number of “hits” divided by the number of “at-bats.” Here is a sample:
+--------
+# File: challenge-question-3
+# Created 12.11.18 by Ksenia Z
+# A simple program that calculates the batting average of a baseball player based
+# on user input.
+
+def main():
+	# Take input from the user
+	player_name = input("What's the player's name? " )
+	hit_amount = input("How many hits?" )
+	batting_amount = input("How many at-bats?" )
+	# Calculates batting average
+	batting_average = hit amount / batting_amount
+	print(player_name+"'s batting average is", batting_average)
+main()
+

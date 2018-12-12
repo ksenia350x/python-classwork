@@ -1,0 +1,13 @@
+2. Write a program that prompts for the user’s first name and stores it in a variable named first_name. Do the same for the last name, using the variable name last_name. Then, use string concatenation to greet them with their full name.
+--------
+# File: challenge-question-2
+# Created 12.11.18 by Ksenia Z
+# A simple program that prompts for a first and last name, then greets the name.
+
+def main():
+	# Asks for a first and last name as input, then issues a greeting to
+	# the input names the user entered
+	first_name = input("What's your first name? " )
+	last_name = input("What's your last name? ")
+	print("Greetings,",first_name,last_name+".")
+main()

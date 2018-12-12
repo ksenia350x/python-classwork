@@ -1,0 +1,17 @@
+2. On many systems with Python, it is possible to run a program by simply clicking (or double-clicking) on the icon of the program file. If you are able to run the convert.py program this way, you may discover another usability issue. The program starts running in a new window, but as soon as the program has finished, the window disappears so that you cannot read the results. Add an input statement at the end of the program so that it pauses to give the user a chance to read the results.
+--------
+# File: deliverables-question-2
+# Created 12.11.18 by Ksenia Z
+# An edit of the convert.py program that uses an input statement
+# at the end to allow the user to read the program's results.
+
+def main():
+    print("This program converts a Celcius temperature")
+    print("value into it's Fahrenheit equivalent")
+    print("")
+    celsius = eval(input("What is the Celsius temperature? "))
+    fahrenheit = 9 / 5 * celsius + 32
+    print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+    # Allows user to view the data before the program ends
+    input("")
+main ()

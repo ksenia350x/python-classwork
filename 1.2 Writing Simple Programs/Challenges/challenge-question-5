@@ -1,0 +1,21 @@
+5. The Mars Curiosity rover takes photos of the Mars surface, and then transmits them to NASA at the speed of light. Light travels at about 186,000 miles per second. Write a program to calculate how long it takes a photo from Curiosity to reach NASA when Mars is at its closest orbit to Earth, a distance of about 34 million miles.
+--------
+# File: challenge-question-5
+# Created 12.11.18 by Ksenia Z
+# A program that calculates the time it will take for a photo from
+# a Mars rover to be delivered over the cosmos to NASA.
+
+def main():
+	# Define the distance between Earth and Mars
+	distance = 34000000
+	# Define the time in mps
+	time = 186000
+	# Calculates the time it would take to travel the distance
+	# according to the mps
+	evaluation = distance / time
+	# Prints data for user to see
+	print("Distance:",distance,"miles")
+	print("Time:",time,"miles per second")
+	# Prints final conclusion
+	print("It takes a photo from the Mars Curiosity rover",evaluation,"seconds to reach NASA when Mars is at it's closest orbit, 34 million miles away.")
+main()

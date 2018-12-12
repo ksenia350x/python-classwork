@@ -1,0 +1,18 @@
+3. Modify the avg2.py program to find the average of three exam scores.
+--------
+# avg2.py
+# by John F. May 23 2016
+# A simple program to average two exam scores
+# Illustrates use of multiple input
+
+def main():
+    # Description
+    print("This program computes the average of three exam scores. ")
+    # Input three test scores
+    score1, score2, score3 = eval(input("Enter three scores separated by a comma: "))
+    # Calculates test score average
+    average = (score1 + score2 + score3) / 3
+    # Displays average to the user
+    print("The average of the scores is: ", average)
+
+main()

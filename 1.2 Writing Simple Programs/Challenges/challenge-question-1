@@ -1,0 +1,13 @@
+1. Print a list of your favorite foods by using a for loop.
+--------
+# File: challenge-question-1
+# Created 12.11.18 by Ksenia Z
+# A loop that lists out Ksenia's favored foods on separate lines.
+
+def main():
+	# For loop that prints out an array of strings on separate lines
+	for food in ["Quesadillas","Artisan grilled cheese","Ice cream","Lobster Rolls"]:
+		print(food)
+
+main()
+

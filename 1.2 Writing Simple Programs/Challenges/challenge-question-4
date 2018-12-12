@@ -1,0 +1,23 @@
+4. Write a program that prompts for four parts of speech, and use those to generate a funny sentence.
+--------
+# File: challenge-question-4
+# Created 12.11.18 by Ksenia Z
+# A program that prompts for parts of speech and fills in the
+# blanks of an empty sentence.
+
+def main():
+	# Promt for user input
+	verb = input("Enter a verb: ")
+	verb2 = input("Enter a verb: ")
+	person = input("Enter a name: ")
+	person2= input("Enter a second name: ")
+	pt_verb = input("Enter a past tense,-ed, verb: ")
+	pt_verb2 = input("Enter a past tense, feeling verb: ")
+	pt_verb3 = input("Enter a past tense, moving verb: ")
+	adj = input("Enter a doing adjective, ex:dancing: ")
+	food = input("Enter a singular food item: ")
+	# Enters user input to fill in the blanks of a few sentences, then printed
+	print("We need to",verb,"the",food+"!",person,pt_verb+".")
+	print("However no matter what",person,"said,",person2,"would not",verb2,"and kept on wordlessly",adj+".")
+	print(person,"felt",pt_verb2+", and so",pt_verb3,"away forever on a search to",verb,"the",food+". However ")
+main()
