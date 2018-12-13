@@ -1,0 +1,24 @@
+6. Modify the futval.py program so that the number of years for the investment is also a user input. Make sure to change the final message to reflect the correct number of years.
+--------
+# File: 1.2-deliverables-question-6
+# Made 12.12.18 by Ksenia Z
+# A program that calculates the value of an investment
+# over the years based on it's yearly interest rate.
+
+def main():
+    # Desc of program
+    print("This program calculates the future value")
+    print("of an yearly investment.")
+    # User input: years of the investment
+    years = eval(input("Enter the amount of years: "))
+    # User input: initial amount of money
+    principal = eval(input("Enter the initial principal: "))
+    # User input: annual percentage rate
+    apr = eval(input("Enter the annual interest rate: "))
+    # Loop the calculation according to the amount of years it lasts
+    for i in range (years) :
+        principal = principal * (1 + apr)
+    # Print conclusion
+    print("The value in",years,"years is: ", principal)
+
+main()

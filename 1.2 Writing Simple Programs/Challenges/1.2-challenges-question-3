@@ -1,6 +1,6 @@
 3. Write a program that displays the batting average for a baseball player. The batting average is calculated as the number of “hits” divided by the number of “at-bats.” Here is a sample:
 --------
-# File: challenge-question-3
+# File: 1.2-challenges-question-3
 # Created 12.11.18 by Ksenia Z
 # A simple program that calculates the batting average of a baseball player based
 # on user input.

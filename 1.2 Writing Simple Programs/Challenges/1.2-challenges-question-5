@@ -1,6 +1,6 @@
 5. The Mars Curiosity rover takes photos of the Mars surface, and then transmits them to NASA at the speed of light. Light travels at about 186,000 miles per second. Write a program to calculate how long it takes a photo from Curiosity to reach NASA when Mars is at its closest orbit to Earth, a distance of about 34 million miles.
 --------
-# File: challenge-question-5
+# File: 1.2-challenges-question-5
 # Created 12.11.18 by Ksenia Z
 # A program that calculates the time it will take for a photo from
 # a Mars rover to be delivered over the cosmos to NASA.

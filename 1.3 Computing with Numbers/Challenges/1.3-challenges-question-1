@@ -1,0 +1,2 @@
+1. The math.pow(x,y) function returns the value of x raised to the y power. For example, math.pow(2,3) returns 8.0. Write a program that prompts for the x and y values, and outputs the result of calling math.pow(x,y).
+--------

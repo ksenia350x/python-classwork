@@ -1,15 +1,19 @@
 1. A user-friendly program should print an introduction that tells the user what the program does. Modify the convert.py program to print an introduction.
 --------
-# convert.py
-# A program to convert Celsius temps to Fahrenheit
-# by: Susan C.
+# File: 1.2-deliverables-question-1
+# Created 12.11.18 by Ksenia Z
+# A celsius to fahrenheit converter.
 
 def main():
+    # Program Description
     print("This program converts a Celcius temperature")
     print("value into it's Fahrenheit equivalent")
     print("")
+    # User temp value input
     celsius = eval(input("What is the Celsius temperature? "))
+    # Conversion equation
     fahrenheit = 9 / 5 * celsius + 32
+    # Conclusion
     print("The temperature is", fahrenheit, "degrees Fahrenheit.")
 
 main ()

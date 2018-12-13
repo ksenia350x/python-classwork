@@ -1,0 +1,20 @@
+4. Modify the convert.py program with a loop so that it executes times before quitting. Each time through the loop, the program should get another temperature from the user and print the converted value.
+--------
+# File: 1.2-deliverables-question-4
+# Made 12.12.18 by Ksenia Z
+# A looped program to convert Celsius temps to Fahrenheit.
+
+def main():
+	# Prompts user for the amount of times the program should loop
+	repeat = eval(input("How many times would you like to repeat this program? "))
+	print("")
+	# Temperature conversion loop
+	for x in range(repeat):
+		# User input celsius temp
+		celsius = eval(input("What is the Celsius temperature? "))
+		# Convert celsius to fahrenheit
+		fahrenheit = 9 / 5 * celsius + 32
+		# Caclulation output
+		print("The temperature is", fahrenheit, "degrees Fahrenheit.")
+		print("")
+main ()

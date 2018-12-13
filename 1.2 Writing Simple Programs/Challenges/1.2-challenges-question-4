@@ -1,6 +1,6 @@
 4. Write a program that prompts for four parts of speech, and use those to generate a funny sentence.
 --------
-# File: challenge-question-4
+# File: 1.2-challenges-question-4
 # Created 12.11.18 by Ksenia Z
 # A program that prompts for parts of speech and fills in the
 # blanks of an empty sentence.

@@ -1,0 +1,26 @@
+7. Suppose you have an investment plan where you invest a certain fixed amount every year. Modify futval.py to compute the total accumulation of your investment. The inputs to the program will be the amount to invest each year, the interest rate, and the number of years for the investment.
+--------
+# File: 1.2-deliverables-question-7
+# Made 12.13.18 by Ksenia Z
+# A program that calculates the amount of money in an account 
+# after yearly interest and fixed investments
+
+def main():
+    # Desc of program
+    print("This program calculates the future value")
+    print("of an yearly investment.")
+    # User input: years of the investment
+    years = eval(input("Enter the amount of years: "))
+    invest = eval(input("How much money would you like to invest each year? $"))
+    # User input: initial amount of money
+    principal = eval(input("Enter the initial principal: "))
+    # User input: annual percentage rate
+    apr = eval(input("Enter the annual interest rate: "))
+    # Loop the calculation according to the amount of years it lasts
+    for i in range (years) :
+	# Calculation
+        principal = invest + principal * (1 + apr)
+    # Print conclusion
+    print("The value in",years,"years is: ", principal)
+
+main()

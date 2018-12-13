@@ -1,0 +1,27 @@
+8. As an alternative to APR, the interest accrued on an account is often described in terms of a nominal rate and the number of compounding periods. For example, if the interest rate is 3% and the interest is compounded quarterly, the account actually earns 3/4% interest every 3 months. Modify the futval.py program to use this method of entering the interest rate. The program should prompt the user for the yearly rate (rate) and the number of times that the interest is compounded each year (periods). To compute the value in ten years, the program will loop 10 * periods times and accrue rate/period interest on each iteration.
+--------
+# File: 1.2-deliverables-question-8
+# Made 12.13.18 by Ksenia Z
+# A program that calculates the principal amount, taking account of
+# the number of times the interest is compounded each year
+
+def main():
+    # Desc of program
+    print("This program calculates the future value")
+    print("of an yearly investment.")
+    # User input: years of the investment
+    years = eval(input("Enter the amount of years: "))
+    # User input: initial amount of money
+    principal = eval(input("Enter the initial principal: "))
+    # User input: yearly interest rate
+    rate = eval(input("Enter the yearly interest rate: "))
+    # User input: compounded interest amount
+    periods = eval(input("How many times is the interest compounded each year? "))
+    # Loop the calculation according to the amount of years it lasts
+    for i in range (years * periods) :
+	# Calculation
+        principal = principal * (1 + rate / periods)
+    # Print conclusion
+    print("The value in",years,"years is: ", principal)
+
+main()

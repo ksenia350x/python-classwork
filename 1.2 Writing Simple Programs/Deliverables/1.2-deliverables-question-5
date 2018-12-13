@@ -1,0 +1,17 @@
+5. Modify the convert.py program so that it computes and prints a table of Celsius temperatures and the Fahrenheit equivalents every 10 degrees from 0°C to 100°C.
+--------
+# File: 1.2-deliverables-question-5
+# Made 12.12.18 by Ksenia Z
+# A program that lists out the fahrenheit equivalent of a celsius temperature.
+
+def main():
+	# Define celsius variable
+        celsius = 0
+	# Loop x11
+        for x in range(11):
+		# Conversion celsius to fahrenheit
+                fahrenheit = 9 / 5 * celsius + 32
+		# Conclusion
+                print("If it is",celsius," degrees Celsius the temperature is", fahrenheit, "degrees Fahrenheit.")
+                celsius = celsius + 10
+main ()
