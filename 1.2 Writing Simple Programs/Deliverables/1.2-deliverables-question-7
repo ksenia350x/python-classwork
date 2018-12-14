@@ -3,7 +3,7 @@
 # File: 1.2-deliverables-question-7
 # Made 12.13.18 by Ksenia Z
 # A program that calculates the amount of money in an account 
-# after yearly interest and fixed investments
+# after yearly interest and fixed investments.
 
 def main():
     # Desc of program

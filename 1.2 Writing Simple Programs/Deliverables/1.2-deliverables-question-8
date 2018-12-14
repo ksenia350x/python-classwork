@@ -3,7 +3,7 @@
 # File: 1.2-deliverables-question-8
 # Made 12.13.18 by Ksenia Z
 # A program that calculates the principal amount, taking account of
-# the number of times the interest is compounded each year
+# the number of times the interest is compounded each year.
 
 def main():
     # Desc of program

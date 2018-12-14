@@ -1,0 +1,20 @@
+Write an interactive Python calculator program. The program should allow the user to type a mathematical expression, and then print the value of the expression. Include a loop so that the user can perform many calculations (say, up to 100). Note: To quit early, the user can make the program crash by typing a bad expression or simply closing the window that the calculator program is running in. You'll learn better ways of terminating interactive programs in later chapters.
+--------
+# File: 1.2-deliverabes-question-12
+# Made 12.14.18 by Ksenia Z
+# This program solves mathematical expressions.
+
+def main():
+	# Program desc
+        print("Enter an expression for the program to solve")
+	# Exit instructions
+        print("Press <Enter> or close the window to exit")
+	# loops 100 times
+        for i in range(100):
+		# Requests an expression from the user
+                expression = eval(input("Enter your expression: "))
+                print("The answer is", expression)'
+	# Exit text
+        print("You've reached the limit of calculations per one instance.")
+        input("Press <Enter> to exit ")
+main()

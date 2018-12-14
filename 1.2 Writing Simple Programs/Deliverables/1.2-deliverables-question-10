@@ -1,0 +1,18 @@
+10. Write a program that converts distances measured in kilometers to miles. One kilometer is approximately 0.62 miles.
+--------
+# File: 1.2-deliverables-question-10
+# Made 12.13.18 by Ksenia Z
+# A program that converts kilometers to miles.
+
+def main():
+	# Desc
+	print("This program converts kilometers to miles")
+	# User input
+	km = eval(input("Enter a distance in km: "))
+	# Conversion equation
+	m = km * 0.62
+	# Conclusion
+	print (km,"kilometers is",m,"miles")
+	# Exit prompt
+	input("Press <Enter> to exit") 
+main()
