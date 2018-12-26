@@ -4,12 +4,18 @@
 # Made 12.26.18 by Ksenia Z
 # This program calculates the volume and surface area of a sphere, given it's radius.
 
+# Makes the math library available
 import math
 def main():	
-    print("Let's calculate the volume and surface area of a sphere")
+       # Program Desc
+    print("Let's calculate the volume and surface area of a sphere"
+    # User input request for sphere radius
     rad = eval(input("Enter the radius of the sphere: "))
+    # Calculates volume of the sphere
     vol = (4 / 3) * math.pi * rad ** 3
+    # Calculates the Surface area of the sphere
     sa = 4 * math.pi * rad ** 2
+    # Displays answers rounded to the second decimal
     print("Volume:",round(vol, 2))
     print("Surface Area:",round(sa, 2))
 main()
