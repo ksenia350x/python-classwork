@@ -2,7 +2,7 @@
 order ships for $0.86 per pound + $1.50 fixed cost for overhead. Write a program that
 calculates the cost of an order.
 --------
-# File: 1.3-hands-on-practice-5
+# File: 1.3-hands-on-practice-05
 # Made 12.27.18 by Ksenia Z
 # This program calculates the cost of a coffee order.
 def main():
