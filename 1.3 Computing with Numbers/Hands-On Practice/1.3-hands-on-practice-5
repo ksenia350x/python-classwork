@@ -4,7 +4,7 @@ calculates the cost of an order.
 --------
 # File: 1.3-hands-on-practice-5
 # Made 12.27.18 by Ksenia Z
-# This program calculates the cost of a coffee order
+# This program calculates the cost of a coffee order.
 def main():
     # Desc
     print("This program calculates the cost of a shipment of coffee")
