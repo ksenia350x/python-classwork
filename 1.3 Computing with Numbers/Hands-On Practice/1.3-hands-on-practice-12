@@ -2,7 +2,7 @@
 --------
 # File: 1.3-hands-on-practice-12
 # Made 12.27.18 by Ksenia Z
-# This program
+# This program finds the sum of the cubes of the first n, user specified variable, natural numbers.
 
 def main():
 
