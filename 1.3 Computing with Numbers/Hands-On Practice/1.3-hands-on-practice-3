@@ -1,0 +1,25 @@
+3. Write a program that computes the molecular weight of a carbohydrate (in grams per mole)
+based on the number of hydrogen, carbon, and oxygen atoms in the molecule. The program
+should prompt the user to enter the number of hydrogen atoms, the number of carbon atoms,
+and the number of oxygen atoms.
+--------
+
+# File: 1.3-hands-on-practice-3
+# Made 12.26.18 by Ksenia Z
+# This program calculates the molecular weight of a carb
+# based on the amount of atoms the user specifies.
+
+def main():
+    # Desc
+    print("This program calculates the molecular weight in grams/mole of a ")
+    print("carbohydrate based on the amount of atoms you choose.")
+    print("")
+    # Atom amount, user input
+    h = eval(input("Enter the number of Hydrogen atoms: "))
+    c = eval(input("Enter the number of Carbon atoms: "))
+    o = eval(input("Enter the number of Oxygen atoms: "))
+    molecularWeight = (h * 1.00794) + (c * 12.0107) + (o * 15.9994)
+    print("")
+    print("The total weight of this carbohydrate")
+    print("is",molecularWeight,"grams per mole.")
+main()
