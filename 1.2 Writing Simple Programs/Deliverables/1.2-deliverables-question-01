@@ -1,6 +1,6 @@
 1. A user-friendly program should print an introduction that tells the user what the program does. Modify the convert.py program to print an introduction.
 --------
-# File: 1.2-deliverables-question-1
+# File: 1.2-deliverables-question-01
 # Created 12.11.18 by Ksenia Z
 # A celsius to fahrenheit converter.
 
