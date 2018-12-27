@@ -1,6 +1,6 @@
 6. Modify the futval.py program so that the number of years for the investment is also a user input. Make sure to change the final message to reflect the correct number of years.
 --------
-# File: 1.2-deliverables-question-6
+# File: 1.2-deliverables-question-06
 # Made 12.12.18 by Ksenia Z
 # A program that calculates the value of an investment
 # over the years based on it's yearly interest rate.
