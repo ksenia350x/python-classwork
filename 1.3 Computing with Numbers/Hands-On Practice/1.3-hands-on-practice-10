@@ -1,0 +1,30 @@
+10. Write a program to determine the length of a ladder required to reach
+a given height when leaned against a house. The height and angle of the
+ladder are given as inputs. To compute length use:
+length=heightsin angle
+Note: The angle must be in radians. Prompt for an angle in degrees and use this formula to convert: 
+radians=180degrees
+--------
+# File: 1.3-hands-on-practice-10
+# Made 12.27.18 by Ksenia Z
+# This program calculates the length required of a ladder for it to reach a given height when leaned against a house.
+
+# Makes library available
+import math
+def main():
+    
+    # Description
+    print("This program calculates the required length of a ladder to reach a given height when leaned against a house.")
+    
+    # User value input
+    height = eval(input("What is the height of the ladder in ft? "))
+    angle = eval(input("What is the angle measure in degrees? "))
+    
+    # Calculates length
+    radian = math.pi / 180 * angle
+    length = height / math.sin(radian)
+    
+    # Final answer
+    print("The required length is",length,"ft")
+main()
+
