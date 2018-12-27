@@ -7,8 +7,12 @@ and 1 mile is 5280 ft.
 # This program evaluates the distance of a lightning strike.
 
 def main():
+    # Desc
     print("This program calculates the distance of a lightning strike.")
-    time = eval(input("How many seconds passed between the time of the thunder and lightning? "))
+    # Time elapsed
+    time = eval(input("How much time, in seconds, has elapsed? "))
+    # calculates distance by converting the time seconds into miles away
     distance = time * (1100 / 5200)
+    # Conclusion, rounded to the second decimal
     print("The lightning strike is",round(distance, 2),"miles away")
 main()
