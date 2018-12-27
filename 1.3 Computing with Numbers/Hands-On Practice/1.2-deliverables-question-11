@@ -1,0 +1,27 @@
+11. Write a program to find the sum of the cubes of the first n natural numbers where the value of n is provided by the user.
+--------
+#
+# Made 12.17.18 by Ksenia Z
+# This program finds the sum of the first n, user specified variable, natural numbers
+
+def main():
+
+    # Program description
+    print("This program finds the sum of the first n natural numbers")
+
+    # User input, value of n
+    n = eval(input("Enter the value of n: "))
+
+    # Set variables to their starting value
+    sum = 0
+    repeat = 1
+    
+    # Loop to find sum of the first n natural numbers
+    for i in range(n):
+        sum = sum + repeat
+        # Adds 1 to repeat each time it loops
+        repeat = repeat + 1
+
+    # Conclusion
+    print("The sum is",sum)
+main()
