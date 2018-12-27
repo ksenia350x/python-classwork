@@ -1,6 +1,6 @@
 4. Modify the convert.py program with a loop so that it executes times before quitting. Each time through the loop, the program should get another temperature from the user and print the converted value.
 --------
-# File: 1.2-deliverables-question-4
+# File: 1.2-deliverables-question-04
 # Made 12.12.18 by Ksenia Z
 # A looped program to convert Celsius temps to Fahrenheit.
 
