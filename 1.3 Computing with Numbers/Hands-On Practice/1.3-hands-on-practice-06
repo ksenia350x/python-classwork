@@ -1,7 +1,7 @@
 6. Two points in a plane are specified using the coordinates (x1,y1) and (x2,y2). Write a program
 that calculates the slope of a line through two (non-vertical) points entered by the user. 
 --------
-# File: 1.3-hands-on-practice-6
+# File: 1.3-hands-on-practice-06
 # Made 12.27.18 by Ksenia Z
 # This program finds the slope between two grid points.
 
