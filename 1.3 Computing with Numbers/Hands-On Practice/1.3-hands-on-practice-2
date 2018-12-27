@@ -9,10 +9,11 @@ import math
 def main():
     # Program desc
     print("Let's calculate the cost of a pizza per square inch!")
-    # Ask user for pizza's diameter
+    # Asks user for the pizza's diameter
     diameter = eval(input("Enter the pizza's diameter: "))
-    # 
+    # Asks user for the pizza's price
     pizzaPrice = eval(input("Enter the price of the pizza: $"))
+    # Calculates the area of the pizza by using the diameter to find the radius
     area = math.pi * (diameter / 2) ** 2
     # Divides price by the area to get the pizza's price per square inch
     ppsi = pizzaPrice / area
