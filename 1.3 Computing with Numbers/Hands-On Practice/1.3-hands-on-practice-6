@@ -3,7 +3,7 @@ that calculates the slope of a line through two (non-vertical) points entered by
 --------
 # File: 1.3-hands-on-practice-6
 # Made 12.27.18 by Ksenia Z
-# This program finds the slope between two grid points
+# This program finds the slope between two grid points.
 
 def main():
     # Desc
