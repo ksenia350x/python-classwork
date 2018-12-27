@@ -1,6 +1,6 @@
 5. Modify the convert.py program so that it computes and prints a table of Celsius temperatures and the Fahrenheit equivalents every 10 degrees from 0°C to 100°C.
 --------
-# File: 1.2-deliverables-question-5
+# File: 1.2-deliverables-question-05
 # Made 12.12.18 by Ksenia Z
 # A program that lists out the fahrenheit equivalent of a celsius temperature.
 
