@@ -1,0 +1,19 @@
+5. The Konditorei coffee shop sells coffee at $10.50 a pound plus the cost of shipping. Each
+order ships for $0.86 per pound + $1.50 fixed cost for overhead. Write a program that
+calculates the cost of an order.
+--------
+# File: 1.3-hands-on-practice-5
+# Made 12.27.18 by Ksenia Z
+# This program calculates the cost of a coffee order
+def main():
+    # Desc
+    print("This program calculates the cost of a shipment of coffee")
+    print("from the Konitorei coffee shop")
+    print("")
+    # Asks user for how many pounds of cofffee are being shipped
+    lb = eval(input("How many pounds of coffee are being shipped? "))
+    # Calculates the cost by multiplying the values by the lb and then adding together the costs
+    total = (lb * 10.5) + (lb * .86) + 1.5
+    # Prints the total
+    print("The total of this order is $" + str(total))
+main()
