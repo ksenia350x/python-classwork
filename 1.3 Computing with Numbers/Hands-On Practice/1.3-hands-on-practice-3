@@ -10,16 +10,19 @@ and the number of oxygen atoms.
 # based on the amount of atoms the user specifies.
 
 def main():
-    # Desc
+    # Program desciption
     print("This program calculates the molecular weight in grams/mole of a ")
     print("carbohydrate based on the amount of atoms you choose.")
     print("")
-    # Atom amount, user input
+    # Asks user for the amount of atoms
     h = eval(input("Enter the number of Hydrogen atoms: "))
     c = eval(input("Enter the number of Carbon atoms: "))
     o = eval(input("Enter the number of Oxygen atoms: "))
+    # Calculates the molecular weight by multiplying the amount
+    # of each atom by its weight and then adding them all together
     molecularWeight = (h * 1.00794) + (c * 12.0107) + (o * 15.9994)
     print("")
+    # Displays the total molecular weight of the carb
     print("The total weight of this carbohydrate")
     print("is",molecularWeight,"grams per mole.")
 main()
