@@ -1,0 +1,31 @@
+13. Write a program to sum a series of numbers entered by the user. The program should first
+prompt the user for how many numbers are to be summed. The program should then prompt
+the user for each of the numbers in turn and print out a total sum after all the numbers have
+been entered. Hint: Use an input statement in the body of the loop.
+--------
+# File: 1.3-hands-on-practice-14
+# Made 12.27.18 by Ksenia Z
+# This program finds the average of a series of numbers.
+
+def main():
+
+    # Program description
+    print("This program finds the average of a series of numbers")
+
+    # The amount of times the loop will repeat
+    loopFor = eval(input("How many numbers will you enter? "))
+    
+    # Sets variable start value
+    total = 0
+    
+    # Loop
+    for i in range(loopFor):
+        # The operator += adds the input to the variable, total
+        total += eval(input("Enter a number: "))
+        
+    # Calculates average
+    math = total / loopFor
+
+    # Conclusion
+    print("The average of your",loopFor,"numbers is",float(math))
+main()
