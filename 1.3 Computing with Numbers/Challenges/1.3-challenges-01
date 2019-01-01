@@ -1,0 +1,18 @@
+1. The math.pow(x,y) function returns the value of x raised to the y power. For
+example, math.pow(2,3) returns 8.0. Write a program that prompts for the x and
+y values, and outputs the result of calling math.pow(x,y).
+--------
+# File: 1.3-challenges-01
+# Made 1.1.19 by Ksenia Z
+#
+import math
+def main():
+    # Description
+    print("This program finds x raised to the power of y")
+    # User input, x and y values
+    x = eval(input("Enter x: "))
+    y = eval(input("Enter y: "))
+    
+    # Output
+    print(math.pow(x,y))
+main()
