@@ -1,0 +1,19 @@
+2. Congratulations, you are the new owner of a local coffee shop! Just one problem
+your employees take four minutes to serve each customer. You peer out from the
+storeroom and notice that the line is getting long. Write a program that prompts
+for the number of people currently in line, and outputs the time it will take to
+serve everyone who’s waiting.
+--------
+# File: 1.3-challenges-02
+# Made 1.1.19 by Ksenia Z
+# This program calculates how much time it'll take to serve every customer in line
+def main():
+    # Program Description
+    print("This program calculate how long it'll take to serve every customer")
+    # User input
+    customers = eval(input("How many people are in line? "))
+    # Calculate, number of customers x time 
+    time = customers * 4
+    # Outcome
+    print("It will take approximately",time,"minutes to serve all the customers")
+main()
