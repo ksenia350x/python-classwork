@@ -1,0 +1,18 @@
+5. You’ve been hired to help write the software for an automatic change dispenser, the kind you see
+attached to a cash register, that automatically dispenses the right coins depending on the amount of
+change that’s owed to the customer. Write a program that first prompts for a number from 0 to 99
+(representing the amount of change that’s due) and then outputs the number of quarters, dimes, nickels,
+and pennies that should be dispensed. (Hint: Use the // operator to perform integer division and
+the % operator to determine the remainder.)
+--------
+# File: 1.3-challenges-05
+# Made 1.2.19 by Ksenia Z
+# This program chooses what coins to dispense for a register's change machine
+
+def main():
+    print("")
+    change = eval(input("Enter a number from 1-99: "))
+    
+    # Outcome
+    print("Your change is",quarters,"quarters,",dimes,"dimes",nickels,"nickles, and",pennies,"pennies")
+main()
