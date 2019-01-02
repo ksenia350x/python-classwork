@@ -1,0 +1,24 @@
+3. A bicycle shop sells bikes and helmets. Some people already own helmets, so on average
+the shop sells one helmet for every five bicycles. Helmets cost $50 and bikes cost
+$250. Write a program that prompts for the number of bikes that the shop expects to sell
+over the next month and outputs the total amount of expected revenue.
+--------
+# File: 1.3-challenges-03
+# Made 1.1.19 by Ksenia Z
+# This program calculates the expected revenue of a bicycle shop
+
+def main():
+    # Desc
+    print("This program estimates the expected monthly revenue of a bike shop")
+    
+    # User input, amount of bikes sold
+    bikes = eval(input("How many bikes are expected to be sold next month? "))
+    
+    # Divide the amount of bikes by 5 then round it down to an integer
+    helmets = int(bikes / 5)
+    # Calculate then add bike and helmet revenue
+    revenue = (bikes * 250) + (50 * helmets)
+
+    # Outcome
+    print("The expected revenue is $"+str(revenue))
+main()
