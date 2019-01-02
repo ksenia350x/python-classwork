@@ -1,0 +1,12 @@
+11. Write a program to perform a unit conversion of your own choosing. Make sure that the program prints an introduction that explains what it does.
+--------
+# File: 1.2-deliverables-question-11
+# Made 12.13.18 by Ksenia Z
+# US Dollar to Euro converter.
+
+def main():
+	print(This program converts US Dollars to Euros)
+	input = eval("Enter the amount of US Dollars to convert: "))
+	output = input * .89
+	print("$"input,"=",output"Euros")
+main()

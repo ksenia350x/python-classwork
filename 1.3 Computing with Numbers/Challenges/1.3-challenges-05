@@ -12,7 +12,16 @@ the % operator to determine the remainder.)
 def main():
     print("")
     change = eval(input("Enter a number from 1-99: "))
-    
+    while change != 0 or change > 0:
+        quarters = change // 25
+        change -= (quarters * 25)
+        dimes = change // 10
+        change -= (dimes * 10)
+        nickels = change // 5
+        change -= (nickels * 5)
+        pennies = change // 1
+        change -= (pennies * 1)
+
     # Outcome
-    print("Your change is",quarters,"quarters,",dimes,"dimes",nickels,"nickles, and",pennies,"pennies")
+    print("Your change is",quarters,"quarters,",dimes,"dimes",nickels,"nickels, and",pennies,"pennies")
 main()
