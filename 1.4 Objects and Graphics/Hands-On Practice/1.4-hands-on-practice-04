@@ -7,7 +7,7 @@
 from graphics import *
 def main():
     # Background snow
-    win = GraphWin("",500,300)
+    win = GraphWin("Winter Scene",500,300)
     shape = Rectangle(Point(0,190),Point(500,300))
     shape.setOutline("white smoke")
     shape.setFill("white smoke")
