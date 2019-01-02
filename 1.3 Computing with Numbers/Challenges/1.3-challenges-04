@@ -1,0 +1,27 @@
+4. There’s a famous puzzle intended to demonstrate the the surprising growth of exponentiation
+sequences, sometimes called the “Wheat and chessboard problem”:
+
+If a chessboard were to have wheat placed upon each square such that one grain were placed on
+the first square, two on the second, four on the third, and so on (doubling the number of grains
+on each subsequent square), how many grains of wheat would be on the chessboard at the finish?
+
+There are 64 squares on a chess board. Write a program that uses a for loop and an accumulator
+to calculate the answer to this classic problem. 
+--------
+# File: 1.3-challenges-04
+# Made 1.1.19 by Ksenia Z
+# This program calculates the total grains of the wheat and chessboard problem
+
+def main():
+    # Desc
+    print("This program calculates the total grains in the 'Wheat and chessboard problem'")
+    # Set variables
+    answer = 0
+    rice = 1
+    # Loop, accumulator
+    for i in range(0,64):
+        answer = answer + rice
+        rice = rice * 2
+    # Outcome
+    print("The total grains on the chessboard is",answer)
+main()
