@@ -6,7 +6,7 @@
 --------
 # File: 1.4-hands-on-practice-01
 # Made 1.2.19 by Ksenia Z
-# This is an altered program that displays red squares on click
+# This is an altered program that displays red squares on click.
 
 from graphics import *
 def main():
