@@ -2,7 +2,7 @@
 --------
 # File: 1.4-hands-on-practice-03
 # Made 1.2.18 by Ksenia Z
-# This program draws Baymax's face
+# This program draws Baymax's face.
 
 from graphics import *
 def main():
