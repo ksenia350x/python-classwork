@@ -2,5 +2,134 @@
 --------
 # File: 1.4-hands-on-practice-05
 # Made 1.2.19 by Ksenia Z
-# This program draws 5 dice depicting a straight
+# This program draws 5 dice depicting a straight.
 
+from graphics import *
+def main():
+    # Dice 1
+    win = GraphWin("",505,100)
+    shape = Rectangle(Point(5,5),Point(100,95))
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 2
+    shape = Rectangle(Point(105,5),Point(200,95))
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 3
+    shape = Rectangle(Point(205,5),Point(300,95))
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 4
+    shape = Rectangle(Point(305,5),Point(400,95))
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 5
+    shape = Rectangle(Point(405,5),Point(500,95))
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Dice 1 Pip 1
+    shape = Circle(Point(53,50),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    
+    # Dice 2 Pip 1 top
+    shape = Circle(Point(133,30),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 2 Pip 2 bot
+    shape = Circle(Point(173,70),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    
+    # Dice 3 Pip 1 mid
+    shape = Circle(Point(253,50),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 3 Pip 2 bot
+    shape = Circle(Point(223,70),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 3 Pip 3 top
+    shape = Circle(Point(283,30),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Dice 4 Pip 1 top right
+    shape = Circle(Point(373,28),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 4 Pip 2 bot right
+    shape = Circle(Point(373,72),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 4 Pip 3 bot left
+    shape = Circle(Point(333,72),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 4 Pip 4 top left
+    shape = Circle(Point(333,28),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Dice 5 Pip 1 top right
+    shape = Circle(Point(473,28),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 5 Pip 2 bot right
+    shape = Circle(Point(473,72),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 5 Pip 3 bot left
+    shape = Circle(Point(433,72),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 5 Pip 4 top left
+    shape = Circle(Point(433,28),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Dice 5 Pip 5 mid
+    shape = Circle(Point(453,50),9)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+main()
