@@ -1,0 +1,32 @@
+1. Alter the program from the last discussion question in the following ways:
+
+(a) Make it draw squares instead of circles.
+(b) Have each successive click draw an additional square on the screen (rather than moving the existing one).
+(c) Print a message on the window "Click again to quit" after the loop, and wait for a final click before closing the window.
+--------
+# File: 1.4-hands-on-practice-01
+# Made 1.2.19 by Ksenia Z
+# This is an altered program that displays red squares on click
+
+from graphics import *
+def main():
+    win = GraphWin()
+    shape = Rectangle(Point(50,50), Point(20,20))
+    shape.setOutline("red")
+    shape.setFill("red")
+    shape.draw(win)
+    for i in range(10):
+        clone = shape.clone()
+        clone.draw(win)
+        p = win.getMouse()
+        c = shape.getCenter()
+        dx = p.getX() - c.getX()
+        dy = p.getY() - c.getY()
+        shape.move(dx,dy)
+    message = Text(Point(100,100), "Click again to quit")
+    message.setSize(12)
+    message.draw(win)
+    win.getMouse()
+    win.close()
+
+main()
