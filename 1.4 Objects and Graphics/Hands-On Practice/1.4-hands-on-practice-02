@@ -2,7 +2,7 @@
 --------
 # File: 1.4-hands-on-practice-02
 # Made 1.2.19 by Ksenia Z
-# This program draws an archery target
+# This program draws an archery target.
 
 from graphics import *
 def main():
