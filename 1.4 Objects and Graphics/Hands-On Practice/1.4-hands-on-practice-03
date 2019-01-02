@@ -1,0 +1,37 @@
+3. Write a program that draws some sort of face.
+--------
+# File: 1.4-hands-on-practice-03
+# Made 1.2.18 by Ksenia Z
+# This program draws Baymax's face
+
+from graphics import *
+def main():
+    # Head
+    win = GraphWin()
+    shape = Circle(Point(100,100),90)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Left eye
+    shape1 = Circle(Point(50,100),15)
+    shape1.setOutline("black")
+    shape1.setFill("black")
+    shape1.setWidth(1)
+    shape1.draw(win)
+
+    # Right eye
+    shape2 = Circle(Point(150,100),15)
+    shape2.setOutline("black")
+    shape2.setFill("black")
+    shape2.setWidth(1)
+    shape2.draw(win)
+
+    # Line
+    shape3 = Rectangle(Point(150,101), Point(50,98))
+    shape3.setOutline("black")
+    shape3.setFill("black")
+    shape3.setWidth(1)
+    shape3.draw(win)
+main()

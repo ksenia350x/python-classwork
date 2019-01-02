@@ -1,0 +1,40 @@
+2. An archery target consists of a central circle of yellow surrounded by concentric rings of red, blue, black and white. Each ring has the same width, which is the same as the radius of the yellow circle. Write a program that draws such a target. Hint: Objects drawn later will appear on top of objects drawn earlier.
+--------
+# File: 1.4-hands-on-practice-02
+# Made 1.2.19 by Ksenia Z
+# This program draws an archery target
+
+from graphics import *
+def main():
+    # White circle
+    win = GraphWin()
+    shape = Circle(Point(100,100),90)
+    shape.setOutline("black")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    
+    # Black circle
+    shape1 = Circle(Point(100,100),70)
+    shape1.setOutline("black")
+    shape1.setFill("black")
+    shape1.draw(win)
+    
+    # Blue circle
+    shape2 = Circle(Point(100,100),50)
+    shape2.setOutline("blue")
+    shape2.setFill("blue")
+    shape2.draw(win)
+    
+    # Red circle
+    shape3 = Circle(Point(100,100),30)
+    shape3.setOutline("red")
+    shape3.setFill("red")
+    shape3.draw(win)
+
+    # Yellow circle
+    shape4 = Circle(Point(100,100),10)
+    shape4.setOutline("yellow")
+    shape4.setFill("yellow")
+    shape4.draw(win)
+main()

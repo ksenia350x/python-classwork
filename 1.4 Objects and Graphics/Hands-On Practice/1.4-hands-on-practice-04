@@ -1,0 +1,115 @@
+4. Write a program that draws a winter scene with a Christmas tree and a snowman.
+-------
+# File: 1.4-hands-on-practice-04
+# Made 1.2.19 by Ksenia Z
+# displays a snowman and thristmas tree scene
+
+from graphics import *
+def main():
+    # Background snow
+    win = GraphWin("",500,300)
+    shape = Rectangle(Point(0,190),Point(500,300))
+    shape.setOutline("white smoke")
+    shape.setFill("white smoke")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Tree stump
+    shape = Rectangle(Point(110,150),Point(85,275))
+    shape.setOutline("sienna")
+    shape.setFill("sienna")
+    shape.setWidth(1)
+    shape.draw(win)
+    
+    # Bottom tree triangle
+    shape = Polygon(Point(100,60),Point(40,225),Point(160,225))
+    shape.setOutline("darkgreen")
+    shape.setFill("darkgreen")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Top tree triangle
+    shape = Polygon(Point(100,50),Point(150,150),Point(50,150))
+    shape.setOutline("green")
+    shape.setFill("green")
+    shape.setWidth(1)
+    shape.draw(win)
+    
+    # Snowman top
+    shape = Circle(Point(350,80),30)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Snowman middle
+    shape = Circle(Point(350,145),45)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Snowman bottom
+    shape = Circle(Point(350,225),60)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Snowman stick arm left
+    shape = Line(Point(315,150),Point(250,120))
+    shape.setOutline("sienna")
+    shape.setFill("sienna")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Snowman stick arm right
+    shape = Line(Point(390,150),Point(450,120))
+    shape.setOutline("sienna")
+    shape.setFill("sienna")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Left eye
+    shape = Circle(Point(335,75),3)
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Left eye white
+    shape = Circle(Point(334,74),1)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+    
+    # Right eye
+    shape = Circle(Point(365,75),3)
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Right eye white
+    shape = Circle(Point(364,74),1)
+    shape.setOutline("white")
+    shape.setFill("white")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Surprised mouth
+    shape = Circle(Point(350,92),5)
+    shape.setOutline("black")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+
+    # Carrot nose
+    shape = Circle(Point(350,78),2)
+    shape.setOutline("orange")
+    shape.setFill("orange")
+    shape.setWidth(1)
+    shape.draw(win)
+main()
+
