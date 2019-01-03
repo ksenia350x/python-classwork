@@ -1,0 +1,73 @@
+8. Line Segment Information.
+This program allows the user to draw a line segment and then displays some graphical and textual information about the line segment. 
+
+Input: 		Two mouse clicks for the end points of the line segment.
+Output: 	Draw the midpoint of the segment in cyan.
+Draw the line.
+Print the length and the slope of the line.
+Formulas:	dx=x2-x1
+dy=y2-y1
+slope=dy/dx
+length=dx2+dy2
+--------
+# File: 1.4-hands-on-practice-08
+# Made 1.3.19 by Ksenia Z
+# Allows user to draw line segment and then displays graphical+textual info about the drawn line segment
+
+import math
+from graphics import *
+def main():
+    win = GraphWin("Line Segment Info",500,500)
+    message = Text(Point(250,25), "Click twice to create a line segment")
+    message.setTextColor("black")
+    message.draw(win)
+
+    # Click 1
+    point1 = win.getMouse()
+    x = point1.getX()
+    y = point1.getY()
+    circle = Circle(Point(x,y), 1.5)
+    circle.setOutline("red")
+    circle.setFill("red")
+    circle.draw(win)
+    # P1
+    message = Text(Point(x,y-15), "P1")
+    message.setSize(10)
+    message.draw(win)
+
+    # Click 2
+    point2 = win.getMouse()
+    x1 = point2.getX()
+    y1 = point2.getY()
+    circle = Circle(Point(x1,y1), 1.5)
+    circle.setOutline("red")
+    circle.setFill("red")
+    circle.draw(win)
+    # P2
+    message = Text(Point(x1,y1-15), "P2")
+    message.setSize(10)
+    message.draw(win)
+
+    # Line segment
+    line = Line(Point(x,y), Point(x1,y1))
+    line.draw(win)
+
+    # Midpoint
+    x2 = (x + x1) / 2
+    y2 = (y + y1) / 2
+    circle = Circle(Point(x2,y2), 1.5)
+    circle.setOutline("cyan")
+    circle.setFill("cyan")
+    circle.draw(win)
+
+    # Formula 1
+    dx = x1 - x
+    # Formula 2
+    dy = y1 - y
+    # Formula 3
+    slope = dy / dx
+    # Formula 4
+    length = math.sqrt((dx ** 2) + (dy ** 2))
+    
+    print("Point 1: ("+str(x)+",",str(y)+")","\nPoint 2: ("+str(x1)+",",str(y1)+")","\nLength: ",length,"\nSlope: ",slope,"\nMidpoint: ("+str(x2)+",",str(y2)+")")
+main()
