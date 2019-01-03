@@ -1,0 +1,52 @@
+7. Circle Intersection.
+Write a program that computes the intersection of a circle with a horizontal line and displays the information textually and graphically.
+
+Input: 		Radius of the circle and the y-intercept of the line.
+Output: 	Draw a circle centered at (0, 0) with the given radius in a window with coordinates 
+	running from -10,-10 to 10, 10.
+Draw a horizontal line across the window with the given y-intercept.
+Draw the two points of intersection in red.
+Print out the x values of the points of intersection.
+Formula:	x= r2-y2
+--------
+# File: 1.4-hands-on-practice-07
+# Made 1.3.19 by Ksenia Z
+# This program computes the intersection of a circle and displays it through a graph
+
+from graphics import *
+import math
+def main():
+    print("This program computes  the intersection of a circle and\na horizontal line.\n\nDon't enter a radius over 10")
+    # Get radius and y-intercept
+    r = eval(input("Enter the radius of the circle: "))
+    y = eval(input("Enter the y-intercept of the line: "))
+    # Equation
+    x = math.sqrt((r ** 2) - (y ** 2))
+    print("X values of intersection"+"-"+str(x),str(x))
+   
+    # Graph
+    win = GraphWin("Circle Intersect")
+    win.setCoords(-10, -10, 10, 10)
+    #Circle
+    center = Point(0, 0)
+    shape = Circle(center, r)
+    shape.setOutline("black")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Line
+    shape = Line(Point(x,y),Point(-x,y))
+    shape.setOutline("sienna")
+    shape.setFill("black")
+    shape.setWidth(1)
+    shape.draw(win)
+    # Point 1
+    shape = Circle(Point(x,y), .2)
+    shape.setFill("red")
+    shape.setOutline("red")
+    shape.draw(win)
+    # Point 2
+    shape = Circle(Point(-x,y), .2)
+    shape.setFill("red")
+    shape.setOutline("red")
+    shape.draw(win)
+main()
