@@ -1,5 +1,28 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+3. A teacher gives 100-point exams that are graded on the scale 90- 100:A, 80-89:B, 70-79:C, 60-69:D, <60:F. Write a program that accepts an exam score as input and prints out the corresponding grade.
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-03
+# Made 1.4.19 by Ksenia Z
+# This program converts an exam score into its letter grade equivalent.
+
+def main():
+    # get the quiz score
+    quizScore = eval(input("This program converts an exam score into its letter grade equivalent\nEnter an exam score (0-100): "))
+
+    if quizScore < 60:
+        letterGrade = 0
+    elif quizScore >= 60 and quizScore <= 69:
+        letterGrade = 1
+    elif quizScore >= 70 and quizScore <= 79:
+        letterGrade = 2
+    elif quizScore >= 80 and quizScore <= 89:
+        letterGrade = 3
+    elif quizScore >= 90 and quizScore <= 100:
+        lettergrade = 4
+    
+    # add into list
+    grade = ["F","D","C","B","A"]
+
+    # output result in letter grade form
+    print("The exam grade is:",grade[letterGrade])
+
+main()

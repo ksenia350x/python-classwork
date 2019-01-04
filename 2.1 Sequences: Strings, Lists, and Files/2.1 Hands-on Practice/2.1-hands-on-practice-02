@@ -1,5 +1,17 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+A teacher gives 5-point quizzes that are graded on the scale 5-A, 4-B, 3-C, 2-D, 1-F, 0-F. Write a program that accepts a quiz score as an input and prints out the corresponding grade.
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-02
+# Made 1.4.19 by Ksenia Z
+# This program finds the letter score of a 0-5 graded quiz.
+
+def main():
+    # get the quiz score
+    quizScore = eval(input("Enter the quiz score (0-5): "))
+
+    # add into list
+    grade = ["F","F","D","C","B","A"]
+
+    # output result in letter grade form
+    print("The grade is:",grade[quizScore])
+
+main()
