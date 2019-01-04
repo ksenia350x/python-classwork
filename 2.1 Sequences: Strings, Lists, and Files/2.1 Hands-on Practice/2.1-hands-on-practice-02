@@ -1,4 +1,4 @@
-A teacher gives 5-point quizzes that are graded on the scale 5-A, 4-B, 3-C, 2-D, 1-F, 0-F. Write a program that accepts a quiz score as an input and prints out the corresponding grade.
+2. A teacher gives 5-point quizzes that are graded on the scale 5-A, 4-B, 3-C, 2-D, 1-F, 0-F. Write a program that accepts a quiz score as an input and prints out the corresponding grade.
 --------
 # File: 2.1-hands-on-practice-02
 # Made 1.4.19 by Ksenia Z
