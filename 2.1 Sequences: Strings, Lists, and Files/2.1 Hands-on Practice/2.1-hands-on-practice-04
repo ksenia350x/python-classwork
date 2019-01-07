@@ -8,12 +8,12 @@ phrase are not capitalized.
 # This program turns phrases into acronyms.
 
 def main():
-    print("This program generates an acronym" from a phrase)
-    phrase_str = input("Enter a phrase: ") # Get phrase
-    word_list = phrase_str.split(' ') # Split phrase into separate words
-    var = 1 # Bring variable into existence
+    print("This program generates acronyms")
+    phrase_str = input("Enter your phrase: ") # Get phrase
+    word_list = phrase_str.split(' ') # Set words in phrase into string items
     print("Your acronym is...")
 
+    var = 1 # Bring variable into existence
     for word in word_list:
         test = str(((word_list[int(var-1)].upper())))
         test1 = print((test[0]),end="")
