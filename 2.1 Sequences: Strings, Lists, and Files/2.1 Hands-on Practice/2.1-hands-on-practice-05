@@ -1,5 +1,20 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+5. Numerologists claim to be able to determine a person's character traits based on the "numeric value" of a name.
+The value of a name is determined by summing up the values of the letters of the name
+where "a" is 1 "b" is 2 "c" is 3 up to "z" being 26 For example the name "Zelle" would have
+the value 26 + 5 + 12 + 12 + 5 = 60 (which happens to be a very auspicious number, by the way). 
+Write a program that calculates the numeric value of a single name provided as input.
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-05
+# Made 1.7.19 by Ksenia Z
+# Calculates the numerical value of a name.
+
+def main():
+    print("This program finds the numerical value of a name") # Desc
+    name_str = input("Enter a name: ") # Get name
+
+    name_value = 0 # Set variable
+    for ch in name_str:
+        e = (ord(ch.lower())-96)
+        name_value += e
+    print("The numerical value is",name_value)
+main()
