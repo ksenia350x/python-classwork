@@ -1,5 +1,21 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+Expand your solution to the previous problem to allow the calculation of a complete name
+such as “John Marvin Zelle” or “John Jacob Jingleheimer Smith”. 
+The total value is just the sum of the numeric values of all the names.
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-06
+# Made 1.7.19 by Ksenia Z
+# This program finds the numerical value of a full name.
+
+def main():
+    print("This program finds the numerical value of a full name") # Desc
+    name_str = input("Enter a name: ") # Get name
+
+    name_value = 0 # Set variable
+    for ch in name_str:
+        if ch == " ":
+            pass
+        else:
+            char_value = (ord(ch.lower())-96)
+            name_value += char_value
+    print("The numerical value is",name_value)
+main()
