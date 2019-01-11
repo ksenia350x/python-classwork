@@ -1,4 +1,4 @@
-A Caesar cipher is a simple substitution cipher based on the idea of shifting each letter of the plaintext
+7. A Caesar cipher is a simple substitution cipher based on the idea of shifting each letter of the plaintext
 message a fixed number (called the key) of positions in the alphabet. For example, if the key value is 2,
 the word "Sourpuss" would be encoded as "Uqwtrwuu." The original message can be recovered by "reencoding"
 it using the negative of the key. 
