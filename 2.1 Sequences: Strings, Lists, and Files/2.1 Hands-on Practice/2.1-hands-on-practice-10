@@ -1,5 +1,16 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+10. Write a program that calculates the average word length in a sentence entered by the user.
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-10
+# Made 1.14.19 by Ksenia Z
+# This program calculates the average word length in a sentence.
+
+def main():
+    sentence_str = input("Enter your sentence: ") # Get sentence
+    sentence_str1 = sentence_str.split(" ") # Split words into list items
+
+    words = len(sentence_str1)
+    cc = len(sentence_str) - (words - 1)
+
+    answer = cc / words # Average
+    print(answer,"character average") # Outcome
+main()
