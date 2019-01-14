@@ -1,5 +1,21 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+Write an improved version of the chaos.py program that allows a user to input two initial values
+and the number of iterations, and then prints a nicely formatted table showing how the values change
+over time. For example, if the starting values were .25 and .26 with 10 iterations, 
+the table might look like this:
+
+Index	0.25 	0.26
+----------------------------
+ 1 		0.731250 	0.750360
+ 2 		0.766441 	0.730547
+ 3 		0.698135 	0.767707
+ 4 		0.821896 	0.695499
+ 5 		0.570894 	0.825942
+ 6 		0.955399 	0.560671
+ 7 		0.166187 	0.960644
+ 8 		0.540418 	0.147447
+ 9 		0.968629 	0.490255
+10 		0.118509 	0.974630
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-11
+# Made 1.14.19 by Ksenia Z
+# This is an improved version of the chaos.py program demonstrating chaotic functions.
