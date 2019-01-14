@@ -1,5 +1,5 @@
 8. One problem with the previous exercise is that it does not deal with the case when
-we "drop off the end" of the alphabet.A true Caesar cipher does the shifting in a
+we "drop off the end" of the alphabet. A true Caesar cipher does the shifting in a
 circular fashion where the next character after "z" is "a." Modify your solution
 to the previous problem to make it circular. You may assume that the input
 consists only of letters and spaces. Hint: Make a string containing all the characters
