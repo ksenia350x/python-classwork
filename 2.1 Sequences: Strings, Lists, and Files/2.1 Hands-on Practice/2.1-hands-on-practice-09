@@ -1,5 +1,17 @@
 9. Write a program that counts the number of words in a sentence entered by the user.
 --------
 # File: 2.1-hands-on-practice-09
-#
-#
+# Made 1.14.19 by Ksenia
+# This program counts the number of words in a sentence.
+
+def main():
+    sentence_str = input("This program counts the number of words in a sentence.\nEnter your sentence: ") # Get sentence
+    
+    wc = 1
+    for ch in sentence_str:
+        if ch != " ":
+            pass
+        else:
+            wc += 1
+    print(wc,"words")
+main()
