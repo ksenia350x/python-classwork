@@ -4,5 +4,49 @@ the word "Sourpuss" would be encoded as "Uqwtrwuu." The original message can be 
 it using the negative of the key. 
 --------
 # File: 2.1-hands-on-practice-07
-#
-#
+# Made 1.14.19 by Ksenia Z
+# This program encodes and decodes Caesar cyphers
+# Unfinished
+
+# broken script; almost works
+
+def encrypt(key,msg_str):
+    name_value = "" # Set variable
+    for ch in msg_str:
+        ch1 = ord(ch)
+        if (ch1 < 97 or ch1 > 122) and (ch1 < 65 or ch1 > 90):
+            name_value += ch
+        else:
+            ch1 = ch1+key
+            if ch1 < 97 and ch > 90: # if below a
+                if ch1 < 65:
+                    ch1 = 91 - (65 - ch1)
+                else:
+                    ch1 = 123 - (97 - ch1)
+                    
+            elif ch1 > 90 and ch1 < 97:
+                if ch1 > 122:
+                    ch1 = 98 + (122 - ch1) # if below
+                else:
+                    ch1 = 64 - (122 - ch1)
+            else:
+                ch1 = ch1
+                    
+        name_value += chr(ch1)
+    return name_value
+            
+def main():
+    print("This program encodes and decodes caesar cypher messages") # Desc
+    signum = eval(input("Enter 1 to encrypt or 2 to decrypt "))
+    msg_str = input("Enter the message: ") # Get message
+    key = eval(input("Enter the key: ")) # Get key
+    if signum == 1:
+        name_value = encrypt(key,msg_str)
+    elif signum == 2:
+        key = key * -1
+        name_value = encrypt(key,msg_str)
+    else:
+        print("You've entered an incorrect value")
+    
+    print("The message is",name_value)
+main()
