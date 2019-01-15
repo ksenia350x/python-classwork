@@ -1,5 +1,29 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+13. Redo one of the previous programming problems to make them batch-oriented
+(using text files for input and output)
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-13
+# Made 1.15.19 by Ksenia Z
+# An edited version of 1.3-hands-on-practice-05 to make it batch-oriented
+
+# Note: The files, parameter and return_value, must be manually created in the same folder as this program
+# for the program to work correctly. Values must be entered into the parameter file first, then the return_value
+# file will hold the output after the program is run
+
+def main():
+    # Create files | Note: read, (overwrite)write, apppend, + creates file
+    parameter = open("parameter","r")
+    return_value = open("return_value","w")
+    
+    # the variable, lb, is set equal to the first line in the file, parameter, linked to the variable, parameter
+    lb = parameter.readline()
+
+    # Calculate
+    total = (int(lb) * 10.5) + (int(lb) * .86) + 1.5
+    
+    # Sends output to file
+    print(str(total),file=return_value)
+
+    # Close files
+    parameter.close()
+    return_value.close()
+main()
