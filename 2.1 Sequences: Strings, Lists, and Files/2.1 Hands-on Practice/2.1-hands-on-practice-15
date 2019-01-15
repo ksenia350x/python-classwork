@@ -1,5 +1,10 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+Write a program to draw a quiz score histogram. Your program should read data from a file.
+Each line of the file contains a number in the range 0 - 10. Your program must count the
+number of occurrences of each score and then draw a vertical bar chart with a bar for
+each possible score (0 - 10) with a height corresponding to the count of that score. 
+For example, if 15 students got an 8, then the height of the bar for 8 should be 15. 
+Hint: Use a list that stores the count for each possible score. An example histogram is shown below:
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-15
+# Made 1..19 by Ksenia Z
+# This program.
