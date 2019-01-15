@@ -1,4 +1,4 @@
-Write an improved version of the chaos.py program that allows a user to input two initial values
+11. Write an improved version of the chaos.py program that allows a user to input two initial values
 and the number of iterations, and then prints a nicely formatted table showing how the values change
 over time. For example, if the starting values were .25 and .26 with 10 iterations, 
 the table might look like this:
