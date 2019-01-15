@@ -1,4 +1,4 @@
-Write a program to draw a quiz score histogram. Your program should read data from a file.
+15. Write a program to draw a quiz score histogram. Your program should read data from a file.
 Each line of the file contains a number in the range 0 - 10. Your program must count the
 number of occurrences of each score and then draw a vertical bar chart with a bar for
 each possible score (0 - 10) with a height corresponding to the count of that score. 
