@@ -1,5 +1,37 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+12. Write an improved version of the futval.py program from Chapter 2. Your program will prompt the user
+for the amount of the investment, the annualized interest rate, and the number of years of the investment.
+The program will then output a nicely formatted table that tracks the value of the investment year by year.
+Your output might look something like this:
+
+Year 	Value
+--------------------------
+0 	$2000.00
+1 	$2200.00
+2 	$2420.00
+3 	$2662.00
+4 	$2928.20
+5 	$3221.02
+6 	$3542.12
+7 	$3897.43
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-12
+# Made 1.15.19 by Ksenia Z
+# This program calculates the future value of an investment.
+
+def main():
+    print("This program calculates the future value\nof an investment.") # Ddsc
+    
+    # Input
+    principal = eval(input("Enter the amount of the investment: "))
+    apr = eval(input("Enter the annualized interest rate: "))
+    year = eval(input("Enter the amount of years of the investment: "))
+
+    # Top line of the table
+    print("Year    Value\n---------------------------")
+    print("0      ${0}".format(principal))
+
+    # Prints each line of the table
+    for i in range(year):
+        principal = round(principal * (1 + apr),2) # formula
+        print("{0}      ${1}".format(i+1,principal)) # output
+main()
