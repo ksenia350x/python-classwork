@@ -18,4 +18,22 @@ Index	0.25 	0.26
 --------
 # File: 2.1-hands-on-practice-11
 # Made 1.14.19 by Ksenia Z
-# This is an improved version of the chaos.py program demonstrating chaotic functions.
+# This is an improved version of the chaos.py program demonstrating a chaotic function in a table.
+
+def main():
+    print("This program illustrates a chaotic function in a table") # Description
+    # Input
+    x = eval(input("Enter a number between 0 and 1: "))
+    y = eval(input("Enter another number between 0 and 1: "))
+    iteration = eval(input("Enter the amount of iterations: "))
+
+    # Top line of the table
+    print("Index     {0}         {1}\n---------------------------".format(x,y))
+
+    # Prints each line of the table
+    for i in range(iteration):
+        x = round(3.9 * x * (1 - x),6)
+        y = round(3.9 * y * (1 - y),6)
+        print("{0}         {1}      {2}".format(i,x,y))
+        
+main()
