@@ -6,9 +6,6 @@ it using the negative of the key.
 # File: 2.1-hands-on-practice-07
 # Made 1.14.19 by Ksenia Z
 # This program encodes and decodes Caesar cyphers.
-# Unfinished
-
-# broken script; almost works
 
 def encrypt(key,msg_str):
     name_value = "" # Set variable
