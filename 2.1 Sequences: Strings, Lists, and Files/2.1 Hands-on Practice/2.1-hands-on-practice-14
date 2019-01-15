@@ -1,5 +1,8 @@
-As discussed, string formatting could be used to simplify the dateconvert2.py program. Go back and redo this program making use of the string-formatting method.
+14. Word Count. A common utility on Unix/Linux systems is a small program called ''wc." 
+This program analyzes a file to determine the number of lines, words, and characters contained therein.
+Write your own version of wc. The program should accept a filename as input and then
+print three numbers showing the count of lines, words, and characters in the file.
 --------
-#
-#
-#
+# File: 2.1-hands-on-practice-14
+# Made 15.19 by Ksenia Z
+# This program.
