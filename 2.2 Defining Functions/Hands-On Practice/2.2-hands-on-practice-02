@@ -1,0 +1,28 @@
+2. Write a program to print the lyrics for ten verses of "The Ants Go Marching." A couple of sample verses
+are given below. You may choose your own activity for the "little one" in each verse, but be sure to choose
+something that makes the rhyme work (or almost work).
+--------
+# File: 2.2-hands-on-practice-02
+# Made 1.16.19 by Ksenia Z
+# This program fills in lines that rhyme to the tune
+
+def main(rhyme1,rhyme2):
+    print("The ants go marching one by one, hurrah! Hurrah!")
+    print("The ants go marching one by one, hurrah! Hurrah!")
+    print("The ants go marching one by one,")
+    print("The little one stops to",rhyme1) # fills in with the rhyme
+    print("And they all go marching down …")
+    print("In the ground …")
+    print("To get out …")
+    print("Of the rain.")
+    print("Boom! Boom! Boom!")
+    print("The ants go marching two by two, hurrah! Hurrah!")
+    print("The ants go marching two by two, hurrah! Hurrah!")
+    print("The ants go marching two by two,")
+    print("The little one stops",rhyme2) # fills in with the rhyme
+    print("And they all go marching down …")
+    print("In the ground …")
+    print("To get out …")
+    print("Of the rain.")
+    print("Boom! Boom! Boom!")
+main("tell a great pun","to say adieu")
