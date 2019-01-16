@@ -39,7 +39,7 @@ def main():
     print("This program finds the sum of the first n natural numbers")
     n = eval(input("Enter the value of n: ")) # get first n numbers
 
-    # Getvalues
+    # Get values
     naturalsum = sumN(n)
     cubesum = sumNCubes(n)
 
