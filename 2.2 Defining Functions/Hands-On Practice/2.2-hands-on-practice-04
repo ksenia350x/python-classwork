@@ -1,0 +1,11 @@
+4. Write definitions for the following two functions:
+
+sumN(n) returns the sum of the first n natural numbers.
+sumNCubes(n) returns the sum of the cubes of the first n natural numbers.
+
+Then use these functions in a program that prompts a user for an n and
+prints out the sum of the first n natural numbers and the sum of the cubes of the first n natural numbers.
+--------
+# File: 2.2-hands-on-practice-04
+# Made 1.16.19 by Ksenia Z
+# This program.
