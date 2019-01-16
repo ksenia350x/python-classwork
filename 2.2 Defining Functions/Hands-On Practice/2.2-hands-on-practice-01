@@ -9,3 +9,15 @@ Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!
 # File: 2.2-hands-on-practice-01
 # Made 1.16.19 by Ksenia Z
 # This program.
+
+def main(animal,noise):
+    print("Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!")
+    print("And on that farm he had a",animal,"Ee-igh, Ee-igh, Oh!")
+    print("With a",noise+",",noise,"here and a",noise+",",noise,"there.")
+    print("Here a",noise+", there a",noise+", everywhere a",noise+",",noise,".")
+    print("Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!\n")
+main("cow","moo")
+main("cat","meow")
+main("dog","woof")
+main("duck","quack")
+main("snek","hiss")
