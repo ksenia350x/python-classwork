@@ -1,0 +1,39 @@
+3. Write definitions for these functions:
+
+sphereArea(radius) Returns the surface area of a sphere having the given radius.
+sphereVolume (radius) Returns the volume of a sphere having the given radius.
+
+Use your functions to solve hands-on practice 1 from section 1.3.
+--------
+# File: 2.2-hands-on-practice-03
+# Made 1.16.19 by Ksenia Z
+# This program solves 1.3-hands-on-practice-01 using functions.
+
+import math
+def sphereArea(sa,radius):
+    # calculate area
+    sa = 4 * math.pi * radius ** 2
+    return sa
+    
+def sphereVolume(vol,radius):
+    # calculate volume
+     vol = (4 / 3) * math.pi * radius ** 3
+     return vol
+     
+def main():
+    # desc
+    print("Thisprogram calculates the volume and surface area of a sphere")
+    radius = eval(input("Enter the radius of the sphere: "))
+
+    # set variables
+    sa = 0
+    vol = 0
+
+    # run the functions with these parameters and sets them equal to these var
+    sa = sphereArea(sa,radius)
+    vol = sphereVolume(vol,radius)
+
+    # outcome
+    print("Volume:",round(vol, 2))
+    print("Surface Area:",round(sa, 2))
+main()
