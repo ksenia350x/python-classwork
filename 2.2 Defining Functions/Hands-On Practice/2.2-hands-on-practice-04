@@ -8,4 +8,42 @@ prints out the sum of the first n natural numbers and the sum of the cubes of th
 --------
 # File: 2.2-hands-on-practice-04
 # Made 1.16.19 by Ksenia Z
-# This program.
+# This program finds the sum of natural numbers and the sum of the cubes of natural numbers using functions.
+
+def sumN(n):
+    # Set variables
+    summ = 0
+    repeat = 1
+    
+    # Find sum of the first n natural numbers
+    for i in range(n):
+        summ = summ + repeat
+        # Adds 1 to repeat each time it loops
+        repeat = repeat + 1
+
+    return summ
+
+def sumNCubes(n):
+    # Set variables
+    summm = 0
+    repeat = 1
+    
+    # Find cube sum of the first n natural numbers
+    for i in range(n):
+        summm = summm + (repeat ** 3)
+        repeat = repeat + 1
+
+    return summm
+
+def main():
+    print("This program finds the sum of the first n natural numbers")
+    n = eval(input("Enter the value of n: ")) # get first n numbers
+
+    # Getvalues
+    naturalsum = sumN(n)
+    cubesum = sumNCubes(n)
+
+    # Conclusion
+    print("The sum is",naturalsum)
+    print("The sum of the cubes is",cubesum)
+main()
