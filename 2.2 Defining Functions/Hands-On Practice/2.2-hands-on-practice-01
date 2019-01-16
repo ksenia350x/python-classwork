@@ -1,4 +1,5 @@
-Write a program to print the lyrics of the song "Old MacDonald." Your program should print the lyrics for five different animals, similar to the example verse below.
+Write a program to print the lyrics of the song "Old MacDonald." Your program should print the lyrics for five
+different animals, similar to the example verse below.
 
 Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!
 And on that farm he had a cow, Ee-igh, Ee-igh, Oh!
@@ -8,7 +9,7 @@ Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!
 --------
 # File: 2.2-hands-on-practice-01
 # Made 1.16.19 by Ksenia Z
-# This program.
+# This program prints the lyrics to Old MacDonald
 
 def main(animal,noise):
     print("Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!")
@@ -16,6 +17,7 @@ def main(animal,noise):
     print("With a",noise+",",noise,"here and a",noise+",",noise,"there.")
     print("Here a",noise+", there a",noise+", everywhere a",noise+",",noise,".")
     print("Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!\n")
+# Calls different animals and sounds
 main("cow","moo")
 main("cat","meow")
 main("dog","woof")
