@@ -4,5 +4,22 @@ Write your own version of wc. The program should accept a filename as input and 
 print three numbers showing the count of lines, words, and characters in the file.
 --------
 # File: 2.1-hands-on-practice-14
-# Made 15.19 by Ksenia Z
-# This program.
+# Made 1.16.19 by Ksenia Z
+# This program finds the lines, words and chars the file name input by the user.
+
+def wordcount(fileName):
+    content = list(open(fileName, 'r')) # adds content into list
+
+    # set variables
+    lines = 0
+    words = 0
+    ch = 0
+    
+    for line in content:
+        lines += 1 # +1 line for every line
+        words += len(line.split(" ")) # Finds word number by splitting the lines in content by spaces
+        ch += len(line) # Finds chars by finding the length in characters of each line
+        
+    print("lines:",lines,"\nwords:",words,"\ncharacters:",ch) # Outcome
+    
+wordcount("1.py") # Requires user to input the parameter while calling the function
