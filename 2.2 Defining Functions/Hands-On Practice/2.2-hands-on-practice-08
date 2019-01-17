@@ -1,0 +1,26 @@
+8. Solve hands-on practice problem 17 from section 1.3 using a function nextGuess(guess, x) that returns the next guess.
+--------
+# File: 2.2-hands-on-practice-08
+# Made 1.17.19 by Ksenia Z
+# This program.
+
+def nextGuess(guess,x):
+    # get loopFor
+    loopFor = eval(input("How many times should the program improve it's guess? "))
+
+    # calculate guess
+    for i in range(loopFor):
+        guess = (guess + (x / guess)) / 2
+    return guess
+
+def main():
+    # get x
+    x = eval(input("Enter a number to find it's square root: "))
+
+    guess = x / 2
+
+    # get outcome
+    guess = nextGuess(guess,x)
+    # outcome
+    print("The estimated square root of",x,"is",guess)
+main()
