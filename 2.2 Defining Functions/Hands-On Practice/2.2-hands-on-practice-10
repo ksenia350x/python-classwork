@@ -3,7 +3,7 @@ returns an acronym for a phrase supplied as a string.
 --------
 # File: 2.2-hands-on-practice-10
 # Made 1.17.19 by Ksenia Z
-# This program.
+# This program creates acronyms using multiple functions.
 
 def acronym(phrase):
     word_list = phrase.split(' ') # Set words in phrase into string items
