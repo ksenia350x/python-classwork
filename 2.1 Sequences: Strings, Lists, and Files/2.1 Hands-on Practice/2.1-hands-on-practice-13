@@ -14,13 +14,13 @@ def main():
     parameter = open("parameter","r")
     return_value = open("return_value","w")
     
-    # the variable, lb, is set equal to the first line in the file, parameter, linked to the variable, parameter
+    # set lb equal to the first line in parameter, the file
     lb = parameter.readline()
 
     # Calculate
     total = (int(lb) * 10.5) + (int(lb) * .86) + 1.5
     
-    # Sends output to file
+    # Send output to file
     print(str(total),file=return_value)
 
     # Close files
