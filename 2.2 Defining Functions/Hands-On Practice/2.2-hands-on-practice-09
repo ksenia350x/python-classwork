@@ -1,0 +1,33 @@
+9. Do hands-on practice problem 3 from section 2.1 using a function grade(score) that returns the letter grade for a score.
+--------
+# File: 2.2-hands-on-practice-09
+# Made 1.17.19 by Ksenia Z 
+# This program finds the letter grade of a test score.
+
+def grade(score):
+    # sort grades into lettergrades
+    if score < 60:
+        letterGrade = 0
+    elif score >= 60 and score <= 69:
+        letterGrade = 1
+    elif score >= 70 and score <= 79:
+        letterGrade = 2
+    elif score >= 80 and score <= 89:
+        letterGrade = 3
+    elif score >= 90 and score <= 100:
+        letterGrade = 4
+    return letterGrade
+
+def main():
+    # get score
+    score = eval(input("This program converts an exam score into its letter grade equivalent\nEnter an exam score (0-100): "))
+
+    # get letterGrade from function grade(score)
+    letterGrade = grade(score)
+
+    # add into list
+    gradeList = ["F","D","C","B","A"]
+
+    # output result in letter grade form
+    print("The exam grade is:",gradeList[letterGrade])
+main()
