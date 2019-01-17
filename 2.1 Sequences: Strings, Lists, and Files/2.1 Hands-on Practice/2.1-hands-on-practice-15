@@ -6,5 +6,5 @@ For example, if 15 students got an 8, then the height of the bar for 8 should be
 Hint: Use a list that stores the count for each possible score. An example histogram is shown below:
 --------
 # File: 2.1-hands-on-practice-15
-# Made 1..19 by Ksenia Z
-# This program.
+#
+#
