@@ -2,7 +2,7 @@
 --------
 # File: 2.2-hands-on-practice-08
 # Made 1.17.19 by Ksenia Z
-# This program.
+# This program guesses the square root of a number.
 
 def nextGuess(guess,x):
     # get loopFor
