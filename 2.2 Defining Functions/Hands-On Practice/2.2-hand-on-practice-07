@@ -1,0 +1,31 @@
+7. Write a function to compute the nth Fibonacci number. Use your function to solve hands-on practice problem from section 1.3.
+--------
+# File: 2.2-hands-on-practice-07
+# Made 1.17.19 by Ksenia Z
+# This program computes the nth number of the Fibonacci sequence
+
+def math(loopTime):
+    #set variables
+    n1 = 1
+    n2 = 0
+
+    # calculate fibonacci number
+    for i in range(loopTime):
+        sum = n1 + n2
+        n1 = n2
+        n2 = sum
+    # return this value
+    return sum
+
+def main():
+    # desc
+    print("This program computes a number in the Fibonacci sequence\n")
+    # get loopTime
+    loopTime = eval(input("Which number of the sequence would you like to know? "))
+
+    # get value
+    sum = math(loopTime)
+
+    # outcome
+    print("The",loopTime,"number of the Fibonacci sequence is",str(sum)+".")
+main()
