@@ -4,3 +4,28 @@ returns an acronym for a phrase supplied as a string.
 # File: 2.2-hands-on-practice-10
 # Made 1.17.19 by Ksenia Z
 # This program.
+
+def acronym(phrase):
+    word_list = phrase.split(' ') # Set words in phrase into string items
+
+    # set variables
+    var = 1
+    test1 = ""
+    for word in word_list:
+        test = str(((word_list[int(var-1)].upper())))
+        test1 += str(test[0])
+        var += 1
+
+    # return acronym string
+    return test1
+def main():
+    print("This program generates acronyms")
+    # get phrase
+    phrase = input("Enter your phrase: ")
+
+    # get acronym
+    test1 = acronym(phrase)
+
+    # print outcome
+    print("Your acronym is...",test1)
+main()
