@@ -2,7 +2,7 @@
 --------
 # File: 2.2-hands-on-practice-07
 # Made 1.17.19 by Ksenia Z
-# This program computes the nth number of the Fibonacci sequence
+# This program computes the nth number of the Fibonacci sequence.
 
 def math(loopTime):
     #set variables
