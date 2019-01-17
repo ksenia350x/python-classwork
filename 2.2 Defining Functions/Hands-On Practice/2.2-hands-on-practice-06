@@ -5,7 +5,7 @@ Use your function to augment triangle2.py from the examples so that it also disp
 --------
 # File: 2.2-hands-on-practice-06
 # Made 1.17.19 by Ksenia Z
-# This program calculates the area of a triangle  using functions
+# This program calculates the area of a triangle using functions.
 
 import math
 def triangleMath(a,b,c):
