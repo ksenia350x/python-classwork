@@ -1,6 +1,31 @@
-5.Redo hands-on practice problem 2 from section 1.3. Use two functions-one to compute
-the area ofa pizza, and one to compute cost per square inch.
+5. Redo hands-on practice problem 2 from section 1.3. Use two functions-one to compute
+the area of a pizza, and one to compute cost per square inch.
 --------
 # File: 2.2-hands-on-practice-05
 # Made 1.16.19 by Ksenia Z
-# This program.
+# This program solves 1.3-hands-on-practice-02 using functions.
+
+import math
+def pizzaArea(diameter):
+    # calculate area of the pizza
+    area = math.pi * (diameter / 2) ** 2
+    return area
+
+def pizzaPrice(area,pp):
+    # calculate pizza price per inch
+    ppsi = pp / area
+    return ppsi
+
+def main():
+     # desc + input
+     print("Let's calculate the cost of a pizza per square inch!")
+     diameter = eval(input("Enter the pizza's diameter: "))
+     pp = eval(input("Enter the price of the pizza: $"))
+     
+     # get variable values from other functions
+     area = pizzaArea(diameter)
+     ppsi = pizzaPrice(area,pp)
+     
+     # outcome
+     print("The price per square inch is $"+str(round(ppsi, 2)))
+main()
