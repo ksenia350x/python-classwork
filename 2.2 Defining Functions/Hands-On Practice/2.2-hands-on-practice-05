@@ -17,8 +17,10 @@ def pizzaPrice(area,pp):
     return ppsi
 
 def main():
-     # desc + input
+     # desc
      print("Let's calculate the cost of a pizza per square inch!")
+     
+     # get diameter and price
      diameter = eval(input("Enter the pizza's diameter: "))
      pp = eval(input("Enter the price of the pizza: $"))
      
