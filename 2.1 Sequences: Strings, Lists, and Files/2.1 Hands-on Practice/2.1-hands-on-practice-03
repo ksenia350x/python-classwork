@@ -17,7 +17,7 @@ def main():
     elif quizScore >= 80 and quizScore <= 89:
         letterGrade = 3
     elif quizScore >= 90 and quizScore <= 100:
-        lettergrade = 4
+        letterGrade = 4
     
     # add into list
     grade = ["F","D","C","B","A"]
