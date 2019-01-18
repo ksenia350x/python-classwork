@@ -5,7 +5,6 @@ b) 3.9 * (x - x * x)
 c) 3.9 * x - 3.9 * x * x
 
 Explain the results of this experiment.
-
 --------
 Code #1 (a)
 
