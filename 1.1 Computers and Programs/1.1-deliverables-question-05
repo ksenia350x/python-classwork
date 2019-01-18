@@ -3,7 +3,6 @@
 n = eval(input(“How many numbers should I print? ”))
 
 Then you will need to change the loop to use n instead of a specific number.
-
 -------
 Code
 
