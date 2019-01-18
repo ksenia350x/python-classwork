@@ -1,0 +1,29 @@
+4. A school classifies students according to credits earned. A student with less than 7 credits is a Freshman.
+At least 7 credits are required to be a Sophomore, 16 to be a Junior and 26 to be classified as a Senior.
+Write a program that calculates class standing from the number of credits earned.
+--------
+# File: 3.1-hands-on-practice-04
+# Made 1.18.19 by Ksenia Z
+# This program determines the class level of a student based on the amount of credits.
+
+def main():
+    # desc
+    print("This program determines the class level of a student based on their credits")
+    # get credit amount
+    credit = eval(input("What is the standing number of credits? "))
+
+    # determine grade level
+    if credit < 7:
+        grade = "Freshman"
+    elif credit == 7 or credit > 7:
+        if credit == 16 or credit > 16:
+            if credit == 26 or credit > 26:
+                grade = "Senior"
+            else:
+                grade = "Junior"
+        else:
+            grade = "Sophomore"
+            
+    # outcome
+    print(grade)
+main()
