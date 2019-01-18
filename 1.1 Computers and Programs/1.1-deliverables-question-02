@@ -1,8 +1,6 @@
 2. Enter and run the chaos program. Try it out with various values of input to see that it functions as described by the instructor.
-
 --------
 
-Code
 def main():
     print("This program illustrates a chaotic function")
     x = eval(input("Enter a number between 0 and 1: "))
