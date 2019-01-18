@@ -3,7 +3,6 @@
 x = 2.0 * x * (1 - x)
 
 Run the program for various input values and compare the results to those obtained from the original program. Write a short paragraph describing any differences that you notice in the behavior of the two versions.
-
 --------
 
 Code #1
