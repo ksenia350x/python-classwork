@@ -1,0 +1,27 @@
+3. An instructor gives 100-point exams that are graded on the scale 90-100:A, 80-89:B, 70-79:C, 60-69:0, <60:F.
+Write a program that accepts an exam score as input and uses a decision structure to calculate the corresponding grade.
+--------
+# File: 3.1-hands-on-practice-03
+# Made 1.22.19 by Ksenia Z
+# This program finds the letter grade of a 100-point exam
+
+def main():
+    # get the quiz score
+    quizScore = eval(input("This program finds the letter grade of a 100-point exam\nEnter an exam score (0-100): "))
+
+    # get letterGrade using decision structure
+    if quizScore < 60:
+        letter = "F"
+    elif quizScore >= 60 and quizScore <= 69:
+        letter = "D" # note: the instructions said, "60-69:0" However, I believe
+                     #       this to be a mistake where 0 is meant to be D
+    elif quizScore >= 70 and quizScore <= 79:
+        letter = "C"
+    elif quizScore >= 80 and quizScore <= 89:
+        letter = "B"
+    elif quizScore >= 90 and quizScore <= 100:
+        letter = "A"
+
+    # output letter grade
+    print("The exam grade is {0}".format(letter))
+main()
