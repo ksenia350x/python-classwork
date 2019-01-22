@@ -1,19 +1,24 @@
 1. Many companies pay time-and-a-half for any hours worked above 40 in a given week. Write a program to input
 the number of hours worked and the hourly rate and calculate the total wages for the week.
 --------
-#
-#
-# Unfinished
+# File: 3.1-hands-on-practice-01
+# Made 1.18.19 by Ksenia Z
+# This program calculates the weekly wage, plus overtime, for a job.
 
 def main():
-    # desc
-    print("")
+    print("This program calculates weekly wage, plus overtime, for a job.")
+    
     # get hourly rate
     rate = eval(input("Enter hourly rate: "))
     # get hours worked
-    credit = eval(input("Enter hours worked: "))
-    
-    # determine if overtime
+    hour = eval(input("Enter hours worked: "))
+
+    if hour > 40: # if overtime
+        # get wage + overtime
+        wage = (hour * rate) + (((hour - 40) * rate) * .5)
+    else: # else get wage
+        wage = hour * rate
+        
     # outcome
-    print(grade)
+    print("${0}".format(wage))
 main()
