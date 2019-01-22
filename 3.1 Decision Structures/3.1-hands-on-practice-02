@@ -1,0 +1,30 @@
+2. An instructor gives five-point quizzes that are graded on the scale 5-A, 4-B, 3-C, 2-D, 1-F, 0-F.
+Write a program that accepts a quiz score as an input and uses a decision structure to calculate the corresponding grade.
+--------
+# File: 3.1-hands-on-practice-02
+# Made 1.22.19 by Ksenia Z
+# This program finds the letter grade of a five-point quiz score.
+
+def main():
+    # get quiz score
+    quizScore = eval(input("This program finds the letter grade equivalent of a quiz\nEnter the quiz score (0-5): "))
+
+    # get letterGrade | if-else decision structure
+    if quizScore == 0 or quizScore == 1:
+        letterGrade = "F"
+    elif quizScore == 2:
+        letterGrade = "D"
+    elif quizScore == 3:
+        letterGrade = "C"
+    elif quizScore == 4:
+        letterGrade = "B"
+    elif quizScore == 5:
+        letterGrade = "A"
+    else:
+        # if incorrect value, then error
+        letterGrade = "<invalid value>"
+        print("\nTry again.")
+
+    # output
+    print("The quiz score is {0}".format(letterGrade))
+main()
