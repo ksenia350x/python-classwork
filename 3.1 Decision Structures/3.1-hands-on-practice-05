@@ -5,10 +5,10 @@ or below the healthy range.
 --------
 # File: 3.1-hands-on-practice-05
 # Made 1.22.19 by Ksenia Z
-# This program calculates the bmi.
+# This program calculates the bmi of a person and finds if it's healthy or not.
 
 def main():
-    print("")
+    print("This program calculates your BMI and finds whether or not it's healthy")
     
     # get height
     height = eval(input("Enter your height (in): "))
