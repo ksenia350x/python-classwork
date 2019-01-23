@@ -1,0 +1,29 @@
+5. The body mass index (BMI) is calculated as a person's weight (in pounds) times 720, divided by
+the square of the person's height (in inches). A BMI in the range 19-25, inclusive, is considered healthy.
+Write a program that calculates a person's BMI and prints a message telling whether they are above, within,
+or below the healthy range.
+--------
+# File: 3.1-hands-on-practice-05
+# Made 1.22.19 by Ksenia Z
+# This program calculates the bmi.
+
+def main():
+    print("")
+    
+    # get height
+    height = eval(input("Enter your height (in): "))
+    # get weight
+    weight = eval(input("Enter your weight (lb): "))    
+
+    # calculate bmi
+    bmi = (weight * 720) / (height ** 2)
+    print("Your bmi is",round(bmi,1))
+
+    # decide bmi status + output
+    if bmi > 25:
+        print("You're above the healthy range!")
+    elif bmi < 19:
+        print("You're below the healthy range!")
+    else:
+        print("You're in the healthy range.")
+main()
