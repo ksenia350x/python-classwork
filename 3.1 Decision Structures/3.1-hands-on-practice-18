@@ -1,0 +1,32 @@
+18. Take a favorite programming problem from a previous section and add decisions and/or exception handling as required
+to make it truly robust (will not crash on any inputs). Trade your program with a friend and have a competition
+to see who can ''break" the other's program.
+--------
+# File: 3.1-hands-on-practice-18
+# Made 1.24.19 by Ksenia Z
+# This program finds the letter score of a 0-5 graded quiz.
+
+def main():
+    print("This program finds the letter score of a 0-5 graded quiz.")
+    quizScore = ""
+    try:
+        quizScore = eval(input("Enter the quiz score (0-5): "))
+        # add into list
+        grade = ["F","F","D","C","B","A"]
+        
+        # output result in letter grade form
+        print("The grade is:",grade[quizScore])
+    # state error then restart if error occurs
+    except NameError:
+        print("Name Error, try again.")
+        main()
+    except IndexError:
+        print("Index Error, try again.")
+        main()
+    except SyntaxError:
+        print("Syntax Error, try again.")
+        main()
+    except TypeError:
+        print("Type Error, try again.")
+        main()
+main()
