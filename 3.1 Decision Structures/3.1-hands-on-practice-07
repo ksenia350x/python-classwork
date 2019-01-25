@@ -1,0 +1,30 @@
+7. A babysitter charges $2.50 an hour until 9:00 PM when the rate drops to $1.75 an hour (the children are in bed).
+Write a program that accepts a starting time and ending time in hours and minutes and calculates the total babysitting bill.
+You may assume that the starting and ending times are in a single 24-hour period. Partial hours should be appropriately prorated.
+--------
+# File: 3.1-hands-on-practice-07
+# Made 1.24.19 by Ksenia Z
+# This program calculates a babysitting bill
+
+def main():
+    print("This program calculates the babysitting bill in a 24 hour timeframe.")
+    # get starting time
+    start = eval(input("Enter the starting time(0-24): "))
+    # get ending time
+    end = eval(input("Enter the ending time(0-24: )"))
+
+    # set variables
+    total = 0
+    end1 = start
+    
+    # loop for amount of sitting hours
+    for i in range((end+1)-start):
+        if end1 > 21 or end1 == 21: # if hour is equal to or greater than 9:00pm (21)
+            total += 1.75 # add lessened salary
+        else:
+            total += 2.50 # add normal salary
+        end1 += 1
+        
+    # outcome
+    print("\nThe bill will be: $",total)
+main()
