@@ -1,7 +1,7 @@
 8. A person is eligible to be a US senator if they are at least 30 years old and have been a US citizen for at least 9 years.
 To be a US house representative these numbers are 25 and 7, respectively. Write a program that accepts a person's age and
 years of citizenship as input and outputs their eligibility for the Senate and House.
---------
+---------
 # File: 3.1-hands-on-practice-08
 # Made 1.24.19 by Ksenia Z
 # This program checks for US senator and representative eligibility.
