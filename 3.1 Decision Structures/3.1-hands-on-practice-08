@@ -8,6 +8,7 @@ years of citizenship as input and outputs their eligibility for the Senate and H
 
 def main():
     print("This program tests if you're eligible to be a US senator or representative")
+    
     # get age | get citizenship
     age = int(input("Enter your age: "))
     citizenship = int(input("Enter amount of citizenship years: "))
